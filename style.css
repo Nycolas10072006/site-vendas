@@ -1,0 +1,257 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(225, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    padding-top: 70px;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 99;
+
+}
+
+
+
+.logo {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 3rem 2rem;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.btn-whatsapp {
+    background: var(--main-color);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+    animation: fadeUp 1s ease;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: var(--main-color);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background: var(--main-color);
+    transform: scale(1.05);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PRODUTOS */
+.produtos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* ZOOM NA IMAGEM */
+.card:hover img {
+    transform: scale(1);
+}
+
+.card p {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    background: var(--main-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: var(--main-color);
+    transform: scale(1);
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.beneficios h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: var(--main-color);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* GRID */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARDS */
+.benefits-grid div {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* HOVER */
+.benefits-grid div:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: var(--main-color);
+}
+
+/* TITULO */
+.benefits-grid h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.benefits-grid p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
