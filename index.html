@@ -1,114 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100..900&display=swap" rel="stylesheet">
-    <title>Nycolas Móveis Planejados</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ECB Intelligence - Consultoria e Implementação em Inteligência Artificial para transformar seu negócio.">
+  <title>ECB Intelligence | Consultoria em I.A.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">N M E</div>
+  <!-- Cabeçalho -->
+  <header id="cabecalho">
+    <div class="logo">ECB<span>Intelligence</span></div>
+    <nav id="menu-nav">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="botao-menu" id="botao-menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#contato" class="botao-acao">Fale Conosco</a>
+  </header>
 
-        <nav class="menu">
-            <a href="#">Início</a>
-            <a href="#Projetos">Projetos</a>
-            <a href="#Sobre">Sobre</a>
-            <a href="#Contato">Contato</a>
-        </nav>
-
-        <a href="https://wa.me/5511993778796" class="btn-whatsapp">
-            WhatsApp
-        </a>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Móveis Planejados de Alto Padrão</h1>
-            <p>Transformamos seu ambiente com qualidade e sofisticação</p>
-            <a href="https://wa.me/5511993778796" class="btn-hero">
-                Solicitar Orçamento</a>
+  <!-- Seção Início / Hero -->
+  <section id="inicio" class="secao secao-hero">
+    <div class="particulas" id="particulas"></div>
+    <div class="hero-conteudo">
+      <div class="hero-badge">🤖 Inteligência Artificial para Negócios</div>
+      <h1>Transforme sua empresa com o poder da <span class="destaque-gradiente">Inteligência Artificial</span></h1>
+      <p>Somos a ECB Intelligence — consultoria especializada em implementação de I.A. que automatiza processos, otimiza atendimento e gera insights estratégicos para o seu crescimento.</p>
+      <div class="hero-botoes">
+        <a href="#servicos" class="botao-primario">Nossos Serviços</a>
+        <a href="#contato" class="botao-secundario">Agendar Consultoria</a>
+      </div>
+      <div class="hero-estatisticas">
+        <div class="estatistica">
+          <strong id="contador1">0</strong><span>%</span>
+          <p>Redução de custos</p>
         </div>
-    </section>
-
-    <!-- PRODUTOS -->
-    <section class="produtos">
-        <h2>Nossos Projetos</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-                <h3>Cozinha Planejada</h3>
-                <p>R$ 5.000</p>
-                <a href="https://wa.me/5511999999999?text=Tenho interesse na cozinha planejada">
-                    Comprar
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1616627456920-6f6b7cdbaff6">
-                <h3>Guarda-Roupa</h3>
-                <p>R$ 3.200</p>
-                <a href="https://wa.me/5511999999999?text=Tenho interesse no guarda roupa">
-                    Comprar
-                </a>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
-                <h3>Painel de TV</h3>
-                <p>R$ 1.800</p>
-                <a href="https://wa.me/5511999999999?text=Tenho interesse no painel de TV">
-                    Comprar
-                </a>
-            </div>
-
+        <div class="estatistica">
+          <strong id="contador2">0</strong><span>x</span>
+          <p>Mais produtividade</p>
         </div>
-    </section>
-
-    <!-- BENEFÍCIOS -->
-    <section class="beneficios">
-        <h2>Por que escolher a gente?</h2>
-
-        <div class="benefits-grid">
-
-            <div>
-                <h3>🔥 Alta Durabilidade</h3>
-                <p>Materiais resistentes à água e de longa vida útil</p>
-            </div>
-
-            <div>
-                <h3>🎯 Projeto Personalizado</h3>
-                <p>Cada móvel feito sob medida para seu espaço</p>
-            </div>
-
-            <div>
-                <h3>⚡ Atendimento Rápido</h3>
-                <p>Orçamento direto no WhatsApp sem burocracia</p>
-            </div>
-
+        <div class="estatistica">
+          <strong id="contador3">0</strong><span>+</span>
+          <p>Projetos entregues</p>
         </div>
-    </section>
-    
-    <footer>
-        <p>© 2026 Nycolas Móveis Planejados</p>
-       
-        </a>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- JS -->
-    <script src="script.js"></script>
+  <!-- Seção Serviços -->
+  <section id="servicos" class="secao secao-servicos">
+    <div class="container">
+      <div class="titulo-secao">
+        <span class="subtitulo">O que fazemos</span>
+        <h2>Nossos <span class="destaque">Serviços</span></h2>
+        <p>Soluções completas de I.A. para cada necessidade do seu negócio</p>
+      </div>
+      <div class="grade-servicos">
+        <div class="cartao-servico" data-animar>
+          <div class="icone-servico">💬</div>
+          <h3>Chatbots & Atendimento</h3>
+          <p>Automatize o atendimento ao cliente com chatbots inteligentes que funcionam 24/7, respondem dúvidas e qualificam leads.</p>
+          <ul class="lista-recursos">
+            <li>Atendimento 24 horas</li>
+            <li>Integração com WhatsApp</li>
+            <li>Respostas personalizadas</li>
+          </ul>
+        </div>
+        <div class="cartao-servico destaque-cartao" data-animar>
+          <div class="selo-popular">Mais procurado</div>
+          <div class="icone-servico">⚡</div>
+          <h3>Automação de Processos</h3>
+          <p>Elimine tarefas repetitivas e ganhe eficiência com automação inteligente baseada em I.A. para sua operação.</p>
+          <ul class="lista-recursos">
+            <li>Redução de custos operacionais</li>
+            <li>Workflows inteligentes</li>
+            <li>Integração com seus sistemas</li>
+          </ul>
+        </div>
+        <div class="cartao-servico" data-animar>
+          <div class="icone-servico">📊</div>
+          <h3>Análise de Dados</h3>
+          <p>Transforme dados brutos em insights estratégicos com dashboards inteligentes e relatórios automatizados.</p>
+          <ul class="lista-recursos">
+            <li>Dashboards em tempo real</li>
+            <li>Previsões com Machine Learning</li>
+            <li>Relatórios automatizados</li>
+          </ul>
+        </div>
+        <div class="cartao-servico" data-animar>
+          <div class="icone-servico">🧠</div>
+          <h3>Consultoria Estratégica</h3>
+          <p>Desenhamos a estratégia ideal de I.A. para o seu negócio, do diagnóstico à implementação completa.</p>
+          <ul class="lista-recursos">
+            <li>Diagnóstico personalizado</li>
+            <li>Roadmap de implementação</li>
+            <li>Treinamento da equipe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Seção Sobre -->
+  <section id="sobre" class="secao secao-sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-texto" data-animar>
+        <span class="subtitulo">Quem somos</span>
+        <h2>Por que escolher a <span class="destaque">ECB Intelligence</span>?</h2>
+        <p>Somos uma consultoria focada em tornar a Inteligência Artificial acessível para empresas de todos os tamanhos. Acreditamos que a I.A. não é o futuro — é o presente.</p>
+        <div class="sobre-vantagens">
+          <div class="vantagem">
+            <div class="vantagem-icone">✅</div>
+            <div>
+              <h4>Experiência Comprovada</h4>
+              <p>Projetos entregues em diversos segmentos do mercado</p>
+            </div>
+          </div>
+          <div class="vantagem">
+            <div class="vantagem-icone">✅</div>
+            <div>
+              <h4>Soluções Sob Medida</h4>
+              <p>Cada negócio é único, nossa consultoria também é</p>
+            </div>
+          </div>
+          <div class="vantagem">
+            <div class="vantagem-icone">✅</div>
+            <div>
+              <h4>Suporte Contínuo</h4>
+              <p>Acompanhamento pós-implementação e otimização</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sobre-visual" data-animar>
+        <div class="sobre-card-visual">
+          <div class="visual-orbita">
+            <div class="nucleo">I.A.</div>
+            <div class="orb orb1">🤖</div>
+            <div class="orb orb2">📊</div>
+            <div class="orb orb3">⚡</div>
+            <div class="orb orb4">💬</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Portfólio / Casos de Sucesso -->
+  <section id="portfolio" class="secao secao-portfolio">
+    <div class="container">
+      <div class="titulo-secao">
+        <span class="subtitulo">Resultados reais</span>
+        <h2>Casos de <span class="destaque">Sucesso</span></h2>
+        <p>Veja como ajudamos empresas a transformar seus negócios com I.A.</p>
+      </div>
+      <div class="grade-portfolio">
+        <div class="caso-sucesso" data-animar>
+          <div class="caso-icone">🏪</div>
+          <div class="caso-tag">E-commerce</div>
+          <h3>Chatbot de Vendas</h3>
+          <p>Implementamos um assistente virtual que aumentou as conversões em 40% e reduziu o tempo de resposta para menos de 5 segundos.</p>
+          <div class="caso-resultado">
+            <div><strong>+40%</strong><span>Conversões</span></div>
+            <div><strong>-70%</strong><span>Tempo de resposta</span></div>
+          </div>
+        </div>
+        <div class="caso-sucesso" data-animar>
+          <div class="caso-icone">🏥</div>
+          <div class="caso-tag">Saúde</div>
+          <h3>Automação de Agendamentos</h3>
+          <p>Sistema inteligente de agendamento que reduziu faltas em 35% e otimizou a agenda de profissionais de saúde.</p>
+          <div class="caso-resultado">
+            <div><strong>-35%</strong><span>Faltas</span></div>
+            <div><strong>+50%</strong><span>Eficiência</span></div>
+          </div>
+        </div>
+        <div class="caso-sucesso" data-animar>
+          <div class="caso-icone">🏭</div>
+          <div class="caso-tag">Indústria</div>
+          <h3>Análise Preditiva</h3>
+          <p>Dashboard de análise preditiva para manutenção de equipamentos, evitando paradas não planejadas.</p>
+          <div class="caso-resultado">
+            <div><strong>-60%</strong><span>Paradas</span></div>
+            <div><strong>R$2M</strong><span>Economia</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="secao secao-contato">
+    <div class="container">
+      <div class="titulo-secao">
+        <span class="subtitulo">Vamos conversar</span>
+        <h2>Pronto para <span class="destaque">Começar</span>?</h2>
+        <p>Entre em contato e descubra como a I.A. pode revolucionar seu negócio</p>
+      </div>
+      <div class="contato-grid">
+        <form class="formulario-contato" id="formulario">
+          <div class="campo-grupo">
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" placeholder="Nome da sua empresa">
+          </div>
+          <div class="campo">
+            <label for="servico">Serviço de interesse</label>
+            <select id="servico">
+              <option value="">Selecione um serviço</option>
+              <option value="chatbot">Chatbots & Atendimento</option>
+              <option value="automacao">Automação de Processos</option>
+              <option value="dados">Análise de Dados</option>
+              <option value="consultoria">Consultoria Estratégica</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Conte-nos sobre seu projeto..."></textarea>
+          </div>
+          <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+        </form>
+        <div class="contato-info">
+          <div class="info-card">
+            <h3>Fale diretamente conosco</h3>
+            <p>Prefere uma conversa mais rápida? Nos chame pelo WhatsApp ou siga nosso Instagram.</p>
+            <div class="contato-botoes">
+              <a href="https://wa.me/5511993778796" target="_blank" class="botao-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </a>
+              <a href="https://instagram.com/nycolasescobar_" target="_blank" class="botao-instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container rodape-grid">
+      <div class="rodape-marca">
+        <div class="logo">ECB<span>Intelligence</span></div>
+        <p>Consultoria especializada em Inteligência Artificial para empresas que querem liderar a transformação digital.</p>
+      </div>
+      <div class="rodape-links">
+        <h4>Navegação</h4>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="rodape-servicos">
+        <h4>Serviços</h4>
+        <a href="#servicos">Chatbots & Atendimento</a>
+        <a href="#servicos">Automação de Processos</a>
+        <a href="#servicos">Análise de Dados</a>
+        <a href="#servicos">Consultoria Estratégica</a>
+      </div>
+      <div class="rodape-contato">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511993778796" target="_blank">📱 (11) 99377-8796</a>
+        <a href="https://instagram.com/nycolasescobar_" target="_blank">📸 @nycolasescobar_</a>
+      </div>
+    </div>
+    <div class="rodape-inferior">
+      <p>&copy; 2025 ECB Intelligence. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp flutuante -->
+  <a href="https://wa.me/5511993778796" target="_blank" class="whatsapp-flutuante" title="Fale pelo WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
